@@ -1,35 +1,77 @@
-Instructions
-Complete the following steps:
+🧫 Belly Button Biodiversity Dashboard
 
-Use the D3 library to read in samples.json from the URL https://static.bc-edx.com/data/dl-1-2/m14/lms/starter/samples.json.
+🧬 Overview
 
-Create a horizontal bar chart with a dropdown menu to display the top 10 OTUs found in that individual.
+This interactive data visualization dashboard explores the biodiversity of bacterial species in the human belly button. The data originates from a study of microbial species found in volunteer samples. Using D3.js and Plotly.js, the dashboard allows users to examine microbial prevalence across different individuals.
 
-Use sample_values as the values for the bar chart.
+🔧 Tools & Technologies
 
-Use otu_ids as the labels for the bar chart.
+JavaScript
 
-Use otu_labels as the hovertext for the chart.
+D3.js
 
-Create a bubble chart that displays each sample.
+Plotly.js
 
-Use otu_ids for the x values.
+HTML/CSS
 
-Use sample_values for the y values.
+📁 Project Structure
 
-Use sample_values for the marker size.
+belly-button-challenge/
+├── index.html              # Main HTML file
+├── static/
+│   ├── js/
+│   │   └── app.js         # JS logic for fetching and plotting
+├── samples.json            # Dataset used for all plots
+└── README.md               # Project documentation
 
-Use otu_ids for the marker colors.
+📊 Dashboard Features
 
-Use otu_labels for the text values.
+Dropdown Menu
 
-Display the sample's metadata, i.e., an individual's demographic information.
+Select any individual sample ID
 
-Loop through each key-value pair from the metadata JSON object and create a text string.
+Bar Chart
 
-Append an html tag with that text to the #sample-metadata panel.
+Top 10 OTUs (Operational Taxonomic Units) per individual
 
-Update all the plots when a new sample is selected. Additionally, you are welcome to create any layout that you would like for your dashboard. An example dashboard is shown as follows:
+Uses sample_values, otu_ids, and otu_labels
 
-Deploy your app to a free static page hosting service, such as GitHub Pages. Submit the links to your deployment and your GitHub repo. Ensure that your repository has regular commits and a thorough README.md file
+Bubble Chart
+
+All OTUs for selected individual
+
+Marker size and color represent abundance and ID
+
+Demographics Panel
+
+Displays key metadata (age, gender, location, etc.) for selected sample
+
+Dynamic Interactivity
+
+All plots and metadata update on dropdown change
+
+🚀 How to Run
+
+Clone the repo:
+
+git clone https://github.com/Geo222222/belly-button-challenge.git
+cd belly-button-challenge
+
+Open index.html in your browser. No server required.
+
+Make sure samples.json is accessible via relative path or hosted externally if deploying.
+
+🌐 Deployment
+
+You can deploy this dashboard using GitHub Pages or any static hosting provider.
+
+📌 Future Enhancements
+
+Add filter controls by demographic or OTU category
+
+Visualize additional statistical insights (mean, median, diversity index)
+
+Make the dashboard responsive across devices
+
+Author: Geo222222Focus: Data Visualization • Microbial Analytics • JavaScript Development
 
